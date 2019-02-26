@@ -14,17 +14,36 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // load task list
+        this.loadList();
     }
+
 
     @Override
     protected void onStop() {
         super.onStop();
         // write any list that the user has.
-        saveList();
+        this.saveList();
+    }
+    private void loadList(){
+        Log.d(TAG, "loadList: Feature not yet implemented");
+    }
+    private void saveList(){
+        Log.d(TAG, "saveList: Feature not yet implemented");
     }
 
-    private void saveList(){
-        Log.d(TAG, "Feature not yet implemented");
+    /**
+     * shows all task list on the GUI
+     */
+    private void displayAlltaskList(){
+        Log.d(TAG, "loadTasklistIntoGUI: Feature not yet implemented");
+    }
+
+    /**
+     * displays a single task list on the GUI
+     */
+    private void displaySingleTaskList(TaskList list){
+        Log.d(TAG, "displayTaskList: Feature not yet implemented");
     }
 
 }
